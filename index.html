@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090914">
+  <meta name="description" content="Jeyasingh T. — Computer Science student and aspiring web developer.">
+  <title>Jeyasingh T. | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
 
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Jeyasingh home"><span class="logo-mark">J</span><span>Jeyasingh<span class="accent">.</span></span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link nav-contact">Let's Talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT · ASPIRING DEVELOPER</div>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Jeyasingh <span class="gradient-text">T.</span></h1>
+        <h2>I build <span class="typed-text" id="typed-text">web experiences</span><span class="typing-cursor">|</span></h2>
+        <p class="hero-description">An enthusiastic Computer Science student learning to turn ideas into clean, creative, and user-friendly websites with HTML, CSS, and JavaScript.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Jeyasingh-666" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub <span>↗</span></a>
+          <span class="social-divider"></span>
+          <span>Always learning. Always building.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="card-top"><span class="window-dots"><i></i><i></i><i></i></span><span class="card-label">PROFILE.EXE</span></div>
+          <div class="avatar-wrap">
+            <div class="avatar-ring"><div class="avatar">JT<span class="avatar-spark">✦</span></div></div>
+          </div>
+          <p class="profile-name">Jeyasingh T.</p>
+          <p class="profile-role">Aspiring Web Developer</p>
+          <div class="profile-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="profile-code"><span class="code-purple">const</span> goal = <span class="code-green">"Build something great"</span>;</div>
+        </div>
+        <div class="float-chip chip-code"><span class="chip-icon">&lt;/&gt;</span><span><strong>Creative code</strong><small>One line at a time</small></span></div>
+        <div class="float-chip chip-spark"><span class="sparkle">✦</span><span><strong>Curious mind</strong><small>Always exploring</small></span></div>
+      </div>
+      <a href="#about" class="scroll-indicator"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Learning today.<br><span class="gradient-text">Building for tomorrow.</span></h2></div>
+      <div class="about-grid">
+        <article class="glass-card about-card reveal">
+          <div class="section-icon">✳</div>
+          <h3>Who I am</h3>
+          <p>I'm Jeyasingh, a second-year B.Sc. Computer Science student at KG College of Arts and Science. I'm interested in web development and enjoy learning how design and code work together to create useful digital experiences.</p>
+          <p>I'm currently strengthening my foundations in HTML, CSS, and JavaScript while building projects that help me practise and grow.</p>
+        </article>
+        <article class="glass-card goal-card reveal">
+          <p class="eyebrow">MY CAREER GOAL</p>
+          <div class="goal-quote">“</div>
+          <h3>Become a skilled web developer.</h3>
+          <p>Improve my technical skills, build creative and user-friendly websites, and keep exploring new technologies.</p>
+          <div class="goal-line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">WHAT I'M LEARNING</p><h2>My <span class="gradient-text">toolkit.</span></h2><p class="section-subtitle">The core technologies I'm using to build my web development skills.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-icon html-icon">5</div><div class="skill-title-row"><h3>HTML5</h3><span class="skill-number">01</span></div><p>Building clear, accessible page structures with semantic markup.</p><div class="skill-bar"><span style="--level:78%"></span></div><small>Learning & practising</small></article>
+        <article class="skill-card reveal"><div class="skill-icon css-icon">✳</div><div class="skill-title-row"><h3>CSS3</h3><span class="skill-number">02</span></div><p>Creating responsive layouts, visual styles, and smooth animations.</p><div class="skill-bar"><span style="--level:68%"></span></div><small>Learning & practising</small></article>
+        <article class="skill-card reveal"><div class="skill-icon js-icon">JS</div><div class="skill-title-row"><h3>JavaScript</h3><span class="skill-number">03</span></div><p>Adding interactivity and making websites respond to user actions.</p><div class="skill-bar"><span style="--level:48%"></span></div><small>Learning & practising</small></article>
+      </div>
+      <p class="small-note">Skill indicators are illustrative and can be adjusted as your experience grows.</p>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">SELECTED WORK</p><h2>Things I'm <span class="gradient-text">building.</span></h2><p class="section-subtitle">A space for projects, practice work, and future experiments.</p></div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-art art-portfolio"><div class="mini-browser"><div class="mini-browser-bar"><i></i><i></i><i></i></div><div class="mini-layout"><div class="mini-sidebar"></div><div class="mini-content"><b></b><b></b><span></span><span></span><span></span></div></div></div><span class="art-label">01 / WEB DESIGN</span></div>
+          <div class="project-info"><div class="project-meta"><span>PERSONAL PROJECT</span><span class="project-status">In progress</span></div><h3>Personal Portfolio</h3><p>A responsive website to introduce myself, share my skills, and showcase projects as I develop them.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/Jeyasingh-666" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-calculator"><div class="calculator-art"><div class="calc-display">123<span>.45</span></div><div class="calc-buttons"><i></i><i></i><i></i><i class="calc-accent"></i><i></i><i></i><i></i><i class="calc-accent"></i><i></i><i></i><i></i><i class="calc-accent"></i></div></div><span class="art-label">02 / JAVASCRIPT</span></div>
+          <div class="project-info"><div class="project-meta"><span>PRACTICE PROJECT</span><span class="project-status planned">Planned</span></div><h3>Interactive Calculator</h3><p>A clean calculator concept to practise JavaScript events, calculations, and interface design.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="project-link muted-link">Project idea · Build next</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-landing"><div class="landing-art"><div class="landing-pill"></div><div class="landing-headline"></div><div class="landing-headline short"></div><div class="landing-button"></div><div class="landing-orb"></div></div><span class="art-label">03 / FRONT END</span></div>
+          <div class="project-info"><div class="project-meta"><span>PRACTICE PROJECT</span><span class="project-status planned">Planned</span></div><h3>Creative Landing Page</h3><p>A modern landing page concept focused on responsive design, layout, and visual storytelling.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div><span class="project-link muted-link">Project idea · Build next</span></div>
+        </article>
+      </div>
+      <p class="project-disclaimer">Only the portfolio link is connected right now. Replace the sample project cards with your own completed projects and repository links as you build them.</p>
+    </section>
+
+    <section class="section container" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">MY JOURNEY</p><h2>Education & <span class="gradient-text">growth.</span></h2></div>
+      <div class="timeline reveal"><div class="timeline-marker"></div><div class="timeline-content glass-card"><span class="timeline-date">CURRENTLY STUDYING · II YEAR</span><h3>B.Sc. Computer Science</h3><p class="college-name">KG College of Arts and Science</p><p>Developing my computer science foundations and exploring front-end web development through hands-on practice.</p><div class="timeline-tags"><span>Computer Science</span><span>Web Development</span><span>Continuous Learning</span></div></div></div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-box reveal">
+        <div class="contact-decoration decoration-one"></div><div class="contact-decoration decoration-two"></div>
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2>Let's build something<br><span class="gradient-text">meaningful.</span></h2>
+        <p class="contact-copy">I'm learning, growing, and always open to connecting with fellow learners and developers.</p>
+        <div class="contact-actions"><a class="button button-primary" href="https://github.com/Jeyasingh-666" target="_blank" rel="noopener noreferrer">Connect on GitHub <span>↗</span></a><a class="button button-ghost" href="#home">Back to top ↑</a></div>
+        <p class="contact-note">Add your preferred professional email or other contact link here when you're ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="logo footer-logo" href="#home"><span class="logo-mark">J</span><span>Jeyasingh<span class="accent">.</span></span></a><p>Designed & built while learning, one step at a time.</p><a href="https://github.com/Jeyasingh-666" target="_blank" rel="noopener noreferrer">@Jeyasingh-666 ↗</a><span class="copyright">© <span id="year"></span> Jeyasingh T.</span></footer>
+</body>
+</html>
